@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button, Container, Box } from '@mui/material';
 import PatientList from './components/PatientList';
 import PatientDetail from './components/PatientDetail';
