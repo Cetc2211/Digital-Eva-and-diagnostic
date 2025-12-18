@@ -6,6 +6,8 @@ import PatientDetail from './components/PatientDetail';
 import AssessmentView from './components/AssessmentView';
 import CreatePatient from './components/CreatePatient';
 import EvaluationLibrary from './components/EvaluationLibrary';
+import ClinicalHistoryForm from './components/ClinicalHistoryForm';
+import AssessmentFlow from './components/NeuroAssessment/AssessmentFlow';
 
 function App() {
   return (
@@ -25,7 +27,9 @@ function App() {
           <Route path="/" element={<PatientList />} />
           <Route path="/patients/new" element={<CreatePatient />} />
           <Route path="/patients/:id" element={<PatientDetail />} />
+          <Route path="/patients/:id/history" element={<ClinicalHistoryForm />} />
           <Route path="/assessments/:id" element={<AssessmentView />} />
+          <Route path="/neuro-assessment/:id" element={<AssessmentFlow />} />
           <Route path="/evaluation" element={<EvaluationLibrary />} />
         </Routes>
       </Container>
